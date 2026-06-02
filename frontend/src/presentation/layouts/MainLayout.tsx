@@ -11,8 +11,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     <div className="main-layout">
       <header className="header">
         <nav>
-          <a href="/">Inicio</a>
-          <a href="/products">Productos</a>
+          {/* Define aquí la navegación de tu aplicación */}
         </nav>
       </header>
 

@@ -1,8 +1,6 @@
 import express, { Express } from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import { errorHandler } from '@/infrastructure/middlewares/errorHandler'
-import productRoutes from '@/ports/inbound/ProductRoutes'
 
 dotenv.config()
 
@@ -29,22 +27,17 @@ app.get('/health', (req, res) => {
   })
 })
 
-// API Routes
-app.use('/api/products', productRoutes)
+// TODO: Agregar rutas de API aquí
 
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ message: 'Ruta no encontrada' })
 })
 
-// Error handler
-app.use(errorHandler)
-
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`)
   console.log(`📝 Ambiente: ${process.env.NODE_ENV || 'development'}`)
-  console.log(`🏗️  Arquitectura: Clean Architecture + Hexagonal`)
 })
 
 export default app

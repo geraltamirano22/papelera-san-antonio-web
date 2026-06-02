@@ -1,2 +1,1 @@
-export { useProducts } from './useProducts'
-export { useProduct } from './useProduct'
+// Exporta tus hooks personalizados desde aquí

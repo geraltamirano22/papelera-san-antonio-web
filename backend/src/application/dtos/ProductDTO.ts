@@ -1,26 +1,13 @@
+// TODO: Implementar ProductDTO
+
 export interface ProductDTO {
-  id: string
-  name: string
-  description: string
-  price: number
-  stock: number
-  categoryId: string
-  createdAt: Date
-  updatedAt: Date
+  // Define los campos necesarios aquí
 }
 
 export interface CreateProductDTO {
-  name: string
-  description: string
-  price: number
-  stock: number
-  categoryId: string
+  // Define los campos para crear un producto aquí
 }
 
 export interface UpdateProductDTO {
-  name?: string
-  description?: string
-  price?: number
-  stock?: number
-  categoryId?: string
+  // Define los campos para actualizar un producto aquí
 }

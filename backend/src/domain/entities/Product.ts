@@ -1,10 +1,5 @@
+// TODO: Implementar entidad Product
+
 export interface Product {
-  id: string
-  name: string
-  description: string
-  price: number
-  stock: number
-  categoryId: string
-  createdAt: Date
-  updatedAt: Date
+  // Define los atributos de dominio aquí
 }

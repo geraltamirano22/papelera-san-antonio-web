@@ -1,9 +1,7 @@
+// TODO: Implementar CategoryDTO
+
 export interface CategoryDTO {
-  id: string
-  name: string
-  description?: string
-  createdAt: Date
-  updatedAt: Date
+  // Define los campos necesarios aquí
 }
 
 export interface CreateCategoryDTO {

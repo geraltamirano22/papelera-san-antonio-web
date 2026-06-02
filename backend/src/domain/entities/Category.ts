@@ -1,7 +1,5 @@
+// TODO: Implementar entidad Category
+
 export interface Category {
-  id: string
-  name: string
-  description?: string
-  createdAt: Date
-  updatedAt: Date
+  // Define los atributos de dominio aquí
 }
